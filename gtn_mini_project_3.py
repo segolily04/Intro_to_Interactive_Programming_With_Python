@@ -39,16 +39,18 @@ def range1000():
 def input_guess(guess):
     global secret_number, guesses
     
-    print "You picked " + str(guess)
+    print "You picked " + guess
     
+	player_guess = int(guess) 
+	
     # main game logic goes here	
-    if (secret_number < guess):
+    if (secret_number < player_guess):
         print "Lower"
         print ""
-    elif (secret_number > guess):
+    elif (secret_number > player_guess):
         print "Higher"
         print ""
-    elif (secret_number == guess):
+    elif (secret_number == player_guess):
         print "Correct! You won!" 
         new_game()
         print ""
