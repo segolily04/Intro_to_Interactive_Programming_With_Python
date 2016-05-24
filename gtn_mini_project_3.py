@@ -54,6 +54,7 @@ def input_guess(guess):
         print "Correct! You won!" 
         new_game()
         print ""
+		return
     else: 
         print ""
     
@@ -63,6 +64,7 @@ def input_guess(guess):
     if (guesses == 0):
         print "Sorry, you lost. The correct number was " + str(secret_number) +"."
         new_game()
+		return
     else: 
         print "You have "+str(guesses) +" guesses left. Pick a number between 0 and 100."
 
