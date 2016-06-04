@@ -36,8 +36,8 @@ def stop_handler():
         stop_count += 1
         stopwatch_running = False
     
-    if tick_interval % 10 == 0:
-        win_count += 1
+        if (tick_interval % 10 == 0):
+            win_count += 1
      
     frame.set_draw_handler(draw)
     
@@ -73,3 +73,4 @@ timer = simplegui.create_timer(100, tick)
 frame.start()
 
 # Please remember to review the grading rubric
+
